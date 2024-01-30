@@ -17,7 +17,7 @@ export default function RootLayout({
 export async function generateMetadata(): Promise<Metadata> {
   const title = "정미량, 박범영 결혼합니다";
   const description = "24년 3월 30일 11시 30분, 포항 UA컨벤션 5층 메리골드홀";
-  const images = "https://r2.wedding.beomyeong.miryang.dev/main.png";
+  const images = "https://r2.wedding.beomyeong.miryang.dev/_BKK6901-2.jpg";
   return {
     title,
     description,
