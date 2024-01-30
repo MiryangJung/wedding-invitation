@@ -6,7 +6,7 @@ export const container = style({
   justifyContent: "space-between",
   gap: "4px",
   padding: "40px 20px",
-  marginTop: "100px",
+  marginTop: "200px",
   backgroundColor: "#FFF9F0",
 });
 

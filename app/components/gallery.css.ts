@@ -5,6 +5,7 @@ export const container = style({
   flexDirection: "column",
   alignItems: "center",
   gap: "20px",
+  position: "relative",
 });
 
 export const description = style({
@@ -26,4 +27,10 @@ export const image = style({
   width: "100%",
   height: "auto",
   objectFit: "cover",
+});
+
+export const icon = style({
+  position: "absolute",
+  top: 0,
+  right: 0,
 });

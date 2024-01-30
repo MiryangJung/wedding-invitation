@@ -36,7 +36,7 @@ export const info = style({
   gap: "8px",
   fontSize: 14,
   flex: 1,
-  padding: "0 20px",
+  padding: "10px 20px",
 });
 
 export const icon = style({

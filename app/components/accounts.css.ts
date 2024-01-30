@@ -9,7 +9,7 @@ export const container = style({
 });
 
 export const description = style({
-  fontSize: 14,
+  fontSize: 13,
   lineHeight: 1.5,
   padding: "0 20px",
   textAlign: "center",
@@ -20,6 +20,7 @@ export const description = style({
   justifyContent: "center",
   gap: "4px",
   margin: "0",
+  wordBreak: "keep-all",
 });
 
 export const block = style({
@@ -27,7 +28,7 @@ export const block = style({
   flexDirection: "column",
   width: "100%",
   borderRadius: "4px",
-  margin: "12px 20px",
+  margin: "0",
   boxSizing: "border-box",
   overflow: "hidden",
 });
@@ -45,24 +46,21 @@ export const blockTitle = style({
   justifyContent: "space-between",
 });
 
-export const blockContent = style({
-  margin: "0",
-  fontSize: "14px",
-  backgroundColor: "rgba(255, 190, 152, 0.20)",
-  padding: "8px 12px",
-});
-
 export const blockRow = style({
+  fontSize: "14px",
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
   gap: "4px",
   margin: "0",
+  border: "2px solid #FFBE98",
+  borderTop: "none",
+  padding: "8px 12px",
 });
 
 export const blockCopyButton = style({
-  backgroundColor: "white",
+  backgroundColor: "rgba(255, 190, 152, 0.30)",
   border: "none",
   borderRadius: "4px",
   padding: "4px 8px",

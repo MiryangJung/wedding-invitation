@@ -1,5 +1,12 @@
-import { container, description, image, imageContainer } from "./gallery.css";
+import {
+  container,
+  description,
+  icon,
+  image,
+  imageContainer,
+} from "./gallery.css";
 import SectionTitle from "./section-title";
+import { SmallLeavesArt } from "./svgs";
 
 export const r2 = "https://r2.wedding.beomyeong.miryang.dev";
 
@@ -27,8 +34,13 @@ export default function Gallery() {
             key={img}
             src={`${r2}/${img}`}
             alt="웨딩 사진"
+            loading="lazy"
           />
         ))}
+      </div>
+
+      <div className={icon}>
+        <SmallLeavesArt />
       </div>
     </section>
   );

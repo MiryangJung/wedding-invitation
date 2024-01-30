@@ -4,7 +4,7 @@ export const container = style({
   position: "relative",
   display: "flex",
   flexDirection: "column",
-  gap: "24px",
+  gap: "26px",
   margin: "40px 0",
 });
 

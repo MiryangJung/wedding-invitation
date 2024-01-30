@@ -3,7 +3,6 @@
 import { useState } from "react";
 import {
   block,
-  blockContent,
   blockCopyButton,
   blockRow,
   blockTitle,
@@ -11,8 +10,19 @@ import {
   description,
 } from "./accounts.css";
 import SectionTitle from "./section-title";
+import { ArrowDownIcon } from "./svgs";
 
 const mAccounts: Account[] = [
+  {
+    bank: "하나은행",
+    number: "52391024244307",
+    name: "정미량",
+  },
+  {
+    bank: "하나은행",
+    number: "52391024244307",
+    name: "정미량",
+  },
   {
     bank: "하나은행",
     number: "52391024244307",
@@ -31,6 +41,7 @@ export default function Accounts() {
         <span>연락주시면 감사하겠습니다.</span>
       </p>
       <Block accounts={mAccounts} who="신부" />
+      <Block accounts={mAccounts} who="신랑" />
     </section>
   );
 }
@@ -49,10 +60,9 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
   };
 
   const onClickAccount = ({ bank, number, name }: Account) => {
-    if (navigator?.share) {
-      navigator.share({
-        title: `${name} 결혼식 축의금 계좌, ${bank}`,
-        text: number,
+    if (navigator?.clipboard) {
+      navigator.clipboard.writeText(number).then(() => {
+        alert("계좌번호가 복사되었습니다.");
       });
     } else {
       window.prompt("계좌번호를 복사해 주세요.", number);
@@ -63,10 +73,10 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
     <div className={block}>
       <div className={blockTitle} onClick={onClickOpen}>
         <span>{who}측 계좌번호</span>
-        <ArrowDownSvg />
+        <ArrowDownIcon />
       </div>
       {open && (
-        <div className={blockContent}>
+        <>
           {accounts.map((account) => (
             <div key={account.number} className={blockRow}>
               <span>
@@ -80,22 +90,8 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
               </button>
             </div>
           ))}
-        </div>
+        </>
       )}
     </div>
-  );
-}
-
-function ArrowDownSvg() {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      height="24"
-      viewBox="0 -960 960 960"
-      width="24"
-      fill="white"
-    >
-      <path d="M480-362q-8 0-15-2.5t-13-8.5L268-557q-11-11-11-28t11-28q11-11 28-11t28 11l156 156 156-156q11-11 28-11t28 11q11 11 11 28t-11 28L508-373q-6 6-13 8.5t-15 2.5Z" />
-    </svg>
   );
 }

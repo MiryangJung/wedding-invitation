@@ -5,7 +5,8 @@ export const container = style({
   flexDirection: "column",
   justifyContent: "center",
   alignItems: "center",
-  margin: "20px 0",
+  padding: "35px 0",
+  marginTop: "30px",
 });
 
 export const title = style({
