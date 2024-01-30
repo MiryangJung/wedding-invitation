@@ -3,6 +3,7 @@
 import Script from "next/script";
 import { container, links, title, link, info, icon } from "./location.css";
 import Link from "next/link";
+import SectionTitle from "./section-title";
 
 declare global {
   interface Window {
@@ -32,7 +33,7 @@ const maps = [
 export default function Location() {
   return (
     <section className={container}>
-      <h2 className={title}>오시는 길</h2>
+      <SectionTitle title="오시는 길" className={title} />
       <div className={links}>
         {maps.map((map) => (
           <Link href={map.url} target="_blank" key={map.name} className={link}>

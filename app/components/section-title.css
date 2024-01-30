@@ -1,0 +1,37 @@
+mark {
+  --lightness: 85%;
+  --highlighted: 1;
+  --highlight: hsl(var(--hue, 15) 80% var(--lightness));
+  background: transparent;
+}
+
+@supports (animation-timeline: view()) {
+  mark {
+    --highlighted: 0;
+    animation: highlight steps(1) both;
+    animation-timeline: view();
+    animation-range: entry 100% cover 10%;
+  }
+}
+
+mark h2 {
+  background: linear-gradient(
+      120deg,
+      var(--highlight, lightblue) 50%,
+      transparent 50%
+    )
+    110% 0 / 200% 100% no-repeat;
+  background-position: calc((1 - var(--highlighted)) * 110%) 0;
+  transition: background-position 1s;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1;
+  margin: 0 20px;
+  padding: 2px;
+}
+
+@keyframes highlight {
+  to {
+    --highlighted: 1;
+  }
+}

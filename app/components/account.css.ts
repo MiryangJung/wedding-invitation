@@ -11,8 +11,8 @@ export const title = style({
   fontSize: 20,
   fontWeight: "600",
   lineHeight: 1.0,
-  margin: "auto",
-  width: "fit-content",
+  margin: "0 20px",
+  textAlign: "center",
 });
 
 export const links = style({
@@ -20,7 +20,6 @@ export const links = style({
   flexDirection: "row",
   gap: "12px",
   justifyContent: "center",
-  flex: 1,
 });
 
 export const link = style({

@@ -7,14 +7,6 @@ export const container = style({
   gap: "20px",
 });
 
-export const title = style({
-  fontSize: 20,
-  fontWeight: "600",
-  lineHeight: 1.0,
-  margin: "0 20px",
-  textAlign: "center",
-});
-
 export const description = style({
   fontSize: 14,
   lineHeight: 1.5,

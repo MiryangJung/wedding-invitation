@@ -1,10 +1,5 @@
-import {
-  container,
-  description,
-  image,
-  imageContainer,
-  title,
-} from "./gallery.css";
+import { container, description, image, imageContainer } from "./gallery.css";
+import SectionTitle from "./section-title";
 
 export const r2 = "https://r2.wedding.beomyeong.miryang.dev";
 
@@ -20,7 +15,8 @@ export const images = [
 export default function Gallery() {
   return (
     <section className={container}>
-      <h2 className={title}>사진첩</h2>
+      <SectionTitle title="사진첩" />
+
       <span className={description}>
         여행을 좋아하는 저희는 방콕에서 스냅 사진을 찍었어요.
       </span>
