@@ -1,5 +1,6 @@
 import Accounts from "./components/accounts";
 import Divider from "./components/divider";
+import Footer from "./components/footer";
 import Gallery from "./components/gallery";
 import Info from "./components/info";
 import Location from "./components/location";
@@ -22,6 +23,8 @@ export default function Home() {
 
       <Divider />
       <Gallery />
+
+      <Footer />
     </main>
   );
 }

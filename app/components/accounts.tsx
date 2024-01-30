@@ -22,7 +22,7 @@ const mAccounts: Account[] = [
 
 export default function Accounts() {
   return (
-    <div className={container}>
+    <section className={container}>
       <SectionTitle title="마음 전하실 곳" />
       <p className={description}>
         <span>참석이 어려우신 분들을 위해 계좌번호를 기재하였습니다.</span>
@@ -31,7 +31,7 @@ export default function Accounts() {
         <span>연락주시면 감사하겠습니다.</span>
       </p>
       <Block accounts={mAccounts} who="신부" />
-    </div>
+    </section>
   );
 }
 

@@ -48,7 +48,7 @@ export const blockTitle = style({
 export const blockContent = style({
   margin: "0",
   fontSize: "14px",
-  backgroundColor: "rgba(255, 190, 152, 0.50)",
+  backgroundColor: "rgba(255, 190, 152, 0.20)",
   padding: "8px 12px",
 });
 
