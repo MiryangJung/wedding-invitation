@@ -5,4 +5,3 @@ globalStyle("html, body", {
   color: "#222222",
   backgroundColor: "#eeeeee",
 });
-

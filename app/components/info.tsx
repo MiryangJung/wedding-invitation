@@ -14,7 +14,7 @@ export default function Info() {
         <InfoSvg />
       </div>
 
-      <span className={title}>초대합니다</span>
+      <h2 className={title}>초대합니다</h2>
       <p className={phrase}>
         <b>9년의 연애를 마치고, 새로운 시작을 맞이하게 되었습니다.</b>
         <br />
@@ -24,9 +24,9 @@ export default function Info() {
       </p>
 
       <p className={wedding}>
-        <span>
+        <time dateTime="2024-03-30 11:30">
           <b>2024년 3월 30일</b> 토요일 오전 <b>11시 30분</b>
-        </span>
+        </time>
         <span>
           <b>포항 UA컨벤션 5층</b>, 메리골드홀
         </span>
