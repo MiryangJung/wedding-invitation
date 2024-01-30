@@ -4,4 +4,5 @@ globalStyle("html, body", {
   margin: 0,
   color: "#222222",
   backgroundColor: "#eeeeee",
+  boxSizing: "border-box",
 });

@@ -18,7 +18,7 @@ export default function Gallery() {
       <SectionTitle title="사진첩" />
 
       <span className={description}>
-        여행을 좋아하는 저희는 방콕에서 스냅 사진을 찍었어요.
+        여행을 좋아하는 저희는 스튜디오 대신 방콕에서 사진을 찍었어요.
       </span>
       <div className={imageContainer}>
         {images.map((img) => (

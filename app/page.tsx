@@ -1,4 +1,4 @@
-import Account from "./components/account";
+import Accounts from "./components/accounts";
 import Divider from "./components/divider";
 import Gallery from "./components/gallery";
 import Info from "./components/info";
@@ -18,7 +18,7 @@ export default function Home() {
       <Location />
 
       <Divider />
-      <Account />
+      <Accounts />
 
       <Divider />
       <Gallery />

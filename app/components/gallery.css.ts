@@ -12,6 +12,7 @@ export const description = style({
   lineHeight: 1.5,
   margin: "0 20px",
   textAlign: "center",
+  color: "#555555",
 });
 
 export const imageContainer = style({
