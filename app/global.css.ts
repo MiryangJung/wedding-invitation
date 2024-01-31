@@ -5,4 +5,5 @@ globalStyle("html, body", {
   color: "#222222",
   backgroundColor: "#eeeeee",
   boxSizing: "border-box",
+  WebkitTapHighlightColor: "transparent",
 });
