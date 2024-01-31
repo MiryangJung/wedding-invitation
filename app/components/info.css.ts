@@ -10,7 +10,7 @@ export const container = style({
 
 export const title = style({
   fontSize: 20,
-  fontWeight: "600",
+  fontWeight: "bold",
   lineHeight: 1.0,
   margin: "0 20px",
 });

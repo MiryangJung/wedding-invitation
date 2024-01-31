@@ -9,7 +9,7 @@ export const container = style({
 
 export const title = style({
   fontSize: 20,
-  fontWeight: "600",
+  fontWeight: "bold",
   lineHeight: 1.0,
   margin: "auto",
   width: "fit-content",
@@ -25,7 +25,6 @@ export const links = style({
 
 export const link = style({
   fontSize: 14,
-  fontWeight: "300",
   lineHeight: 1.0,
   color: "#555555",
 });

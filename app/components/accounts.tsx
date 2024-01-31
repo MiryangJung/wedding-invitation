@@ -19,14 +19,14 @@ const mAccounts: Account[] = [
     name: "정미량",
   },
   {
-    bank: "하나은행",
-    number: "52391024244307",
-    name: "정미량",
+    bank: "농협",
+    number: "71707552154361",
+    name: "김미화",
   },
   {
     bank: "하나은행",
-    number: "52391024244307",
-    name: "정미량",
+    number: "52391024095007",
+    name: "정길훈",
   },
 ];
 

@@ -13,7 +13,6 @@ export const loading = style({
   justifyContent: "center",
   alignItems: "center",
   fontSize: 16,
-  fontWeight: "300",
   color: "white",
   position: "absolute",
   top: "45%",

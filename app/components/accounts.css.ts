@@ -35,7 +35,7 @@ export const block = style({
 
 export const blockTitle = style({
   fontSize: "14px",
-  fontWeight: "600",
+  fontWeight: "bold",
   margin: "0",
   backgroundColor: "#FFBE98",
   padding: "8px 12px",
@@ -67,6 +67,6 @@ export const blockCopyButton = style({
   color: "#555555",
   cursor: "pointer",
   fontSize: "12px",
-  fontWeight: "600",
+  fontWeight: "bold",
   outline: "none",
 });

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { suit } from "./style/fonts/suit";
+import { gowunBatang } from "./style/fonts/gowunBatang";
 import "./global.css";
 
 export default function RootLayout({
@@ -8,7 +8,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={suit.className}>
+    <html lang="ko" className={gowunBatang.className}>
       <body>{children}</body>
     </html>
   );
