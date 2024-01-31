@@ -81,6 +81,7 @@ function Map() {
                 129.34103582889725
               ),
               level: 5,
+              draggable: false,
             };
             const map = new kakao.maps.Map(mapContainer, mapOption);
             const geocoder = new kakao.maps.services.Geocoder();
