@@ -59,6 +59,16 @@ export const blockRow = style({
   padding: "8px 12px",
 });
 
+export const blockContent = style({
+  fontSize: "14px",
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  gap: "4px",
+  width: "210px",
+});
+
 export const blockCopyButton = style({
   backgroundColor: "rgba(255, 190, 152, 0.30)",
   border: "none",
@@ -67,6 +77,5 @@ export const blockCopyButton = style({
   color: "#555555",
   cursor: "pointer",
   fontSize: "12px",
-  fontWeight: "bold",
   outline: "none",
 });

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import {
   block,
+  blockContent,
   blockCopyButton,
   blockRow,
   blockTitle,
@@ -14,7 +15,7 @@ import { ArrowDownIcon } from "./svgs";
 
 const mAccounts: Account[] = [
   {
-    bank: "하나은행",
+    bank: "하나",
     number: "52391024244307",
     name: "정미량",
   },
@@ -24,9 +25,27 @@ const mAccounts: Account[] = [
     name: "김미화",
   },
   {
-    bank: "하나은행",
+    bank: "하나",
     number: "52391024095007",
     name: "정길훈",
+  },
+];
+
+const bAccounts: Account[] = [
+  {
+    bank: "신한",
+    number: "110434273116",
+    name: "박범영",
+  },
+  {
+    bank: "하나",
+    number: "65291034775407",
+    name: "이미연",
+  },
+  {
+    bank: "농협",
+    number: "3520842586813",
+    name: "박원용",
   },
 ];
 
@@ -41,7 +60,7 @@ export default function Accounts() {
         <span>연락주시면 감사하겠습니다.</span>
       </p>
       <Block accounts={mAccounts} who="신부" />
-      <Block accounts={mAccounts} who="신랑" />
+      <Block accounts={bAccounts} who="신랑" />
     </section>
   );
 }
@@ -79,9 +98,11 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
         <>
           {accounts.map((account) => (
             <div key={account.number} className={blockRow}>
-              <span>
-                {account.bank} {account.number} <b>{account.name}</b>
-              </span>
+              <div className={blockContent}>
+                <span>{account.bank}</span>
+                <span>{account.number}</span>
+                <b>{account.name}</b>
+              </div>
               <button
                 className={blockCopyButton}
                 onClick={() => onClickAccount(account)}
