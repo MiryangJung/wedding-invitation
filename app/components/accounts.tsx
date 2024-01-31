@@ -80,7 +80,7 @@ function Block({ accounts, who }: { accounts: Account[]; who: string }) {
           {accounts.map((account) => (
             <div key={account.number} className={blockRow}>
               <span>
-                {account.bank} {account.number} {account.name}
+                {account.bank} {account.number} <b>{account.name}</b>
               </span>
               <button
                 className={blockCopyButton}
