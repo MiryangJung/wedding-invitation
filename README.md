@@ -1,11 +1,13 @@
 # 미량 범영 모바일 청첩장
 
+> [wedding.beomyeong.miryang.dev](https://wedding.beomyeong.miryang.dev)
+
 ```
 npm i
 npm run dev
 ```
 
-## Tech
+## Stack
 
 - [Next.js 14](https://nextjs.org/)
 - [TypeScript](https://www.typescriptlang.org/ko/)
