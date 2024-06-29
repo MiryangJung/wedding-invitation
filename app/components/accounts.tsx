@@ -16,17 +16,17 @@ import { ArrowDownIcon } from "./svgs";
 const mAccounts: Account[] = [
   {
     bank: "하나",
-    number: "52391024244307",
+    number: "-",
     name: "정미량",
   },
   {
     bank: "농협",
-    number: "71707552154361",
+    number: "-",
     name: "김미화",
   },
   {
     bank: "하나",
-    number: "52391024095007",
+    number: "-",
     name: "정길훈",
   },
 ];
@@ -34,17 +34,17 @@ const mAccounts: Account[] = [
 const bAccounts: Account[] = [
   {
     bank: "신한",
-    number: "110434273116",
+    number: "-",
     name: "박범영",
   },
   {
     bank: "하나",
-    number: "65291034775407",
+    number: "-",
     name: "이미연",
   },
   {
     bank: "농협",
-    number: "3520842586813",
+    number: "-",
     name: "박원용",
   },
 ];
